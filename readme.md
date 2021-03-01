@@ -357,7 +357,6 @@ Ant-Cycle模型和Ant-Quantity模型路径长度统计
    第5点提到，启发式遗传算法比较容易跳出局部最优值，是因为启发式遗传算法中的适应度越高的染色体交叉属于局部搜索（即在A区域内搜索），适应度一般的染色体可能在[鞍点](https://en.wikipedia.org/wiki/Saddle_point)或C点，其交叉可能就是全局搜索，关键就是如何设置适应度高的染色体交叉和适应度较高、一般染色体交叉，太过于随机，则会降低收敛速度，还有一个关键点就是在染色体交叉后如何保留种群的多样性，详看请看参考文献[^2]；
    启发式，根据优化目标调整算法或多算法组合，蚁群算法根据优化目标调整算法可能性不大，不可能把蚂蚁调整为会飞，那就是粒子群算法了，多算法组合是蚁群算法的一个优化方向，如[模拟退火](https://en.wikipedia.org/wiki/Simulated_annealing)+蚁群算法、[爬山算法](https://en.wikipedia.org/wiki/Hill_climbing)+蚁群算法，模拟退火和爬山算法跳出局部最优值的好帮手，而且计算快，算法组合后，性能受影响小，笔者用类似的方法解决了背包问题+商旅问题； 
 
-
 <center> 
   <img src="./data/images/nonconvex.png" style="zoom:67%;" /> 
   <br>
@@ -367,10 +366,10 @@ Ant-Cycle模型和Ant-Quantity模型路径长度统计
     padding: 2px;">https://waveopt-lab.uic.edu/guaranteed-non-convex-optimization-for-signal-processing/</div>
 </center>
 
+
 参考文献：
 
 [^1]: 段海滨. 蚁群算法原理及其应用[M]. 北京: 科学出版社, 2005.
-
 [^2]: 运筹学, 树栋, 遗传学. 遗传算法原理及应用[M]. 国防工业出版社, 1999.
 
 [^3]:谢建, 朱建军. 等式约束对病态问题的影响及约束正则化方法[J]. 武汉大学学报● 信息科学版, 2015, 40(10): 1344-1348.
